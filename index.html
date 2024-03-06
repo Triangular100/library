@@ -10,7 +10,28 @@
 </head>
 
 <body>
-    <h1>Hi</h1>
+    <div class="header-container">
+        <div class="header">
+            <a class="logo" href="#library">library</a>
+            <button class="add-book-button">Add Book</button>
+        </div>
+    </div>
+    <div class="books-container">
+        <div class="books"></div>
+    </div>
+    <div class="add-book-form-container">
+        <form class="add-book-form" onsubmit="return false;" action="post">
+            <p class="add-book-form-title">Add Book</p>
+            <input type="text" id="input-title" maxlength="100" placeholder="Title" required>
+            <input type="text" id="input-author" maxlength="100" placeholder="Author" required>
+            <input type="number" id="input-pages" min="1" max="1000000" placeholder="Pages" required>
+            <div class="form-row">
+                <label for="input-read">Read</label>
+                <input type="checkbox" id="input-read">
+            </div>
+            <button class="add-book-submit" type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 
 </html>
